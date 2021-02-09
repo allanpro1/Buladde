@@ -6,8 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".Amannya"
     android:id="@+id/drawer_layout"
+android:background="#F4F4F4"
     >
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <include
+        layout="@layout/mainx"/>
 
 
     <ScrollView
@@ -25,547 +32,521 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <include
-                    layout="@layout/mainx"/>
+<!--                <include-->
+<!--                    layout="@layout/mainx"/>-->
 
-                <TextView
-                    android:id="@+id/textView"
+                <Button
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4F4F4F"
+                android:editable="false"
+                android:text="Beene"
+                android:textColor="#ffff"
+                    android:layout_marginTop="3dp"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/textVi90998ew2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="Bemba"
+                    android:background="#4F4F4F"
                     android:editable="false"
-                    android:text="okuva edda nedda elyo lyonna"
-                    android:textColor="#040303"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/ok"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:text="linno eggwanga buganda"
-                    android:textColor="#040303"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/te"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:text="lyamanyibwa nnyo eggwanga lyaffe"
-                    android:textColor="#040303"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:text="okwetoloola ensi zonna"
-                    android:textColor="#040303"
-                    android:textSize="20dp" />
-
-
-                <TextView
-                    android:id="@+id/texesopotView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#00FDFAFA"
-                    android:editable="false"
-                    android:textColor="#040303"
+                    android:textColor="#FFFFFF"
                     android:textSize="20dp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/textexpoView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="Twesiimye nnyo"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
-
-                <TextView
-                    android:id="@+id/textjjkoexpoView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="twesiimye nnyo"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
-
-                <TextView
-                    android:id="@+id/jjkoexpoView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="olwa Buganda yaffe"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
-
-                <TextView
-                    android:id="@+id/extjjkoexpoView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="ekitiibwa kya Buganda kyava dda"
-                    android:textSize="15dp"
-                    android:paddingLeft="60dp"/>
-
-                <TextView
-                    android:id="@+id/texexpoView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="Naffe tukikuumenga"
-                    android:textSize="15dp"
-                    android:paddingLeft="70dp"/>
-
-                <TextView
-                    android:id="@+id/texexpbboView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textSize="20dp"
-                    android:textAlignment="center"/>
-
-
-                <TextView
-                    android:id="@+id/texexpoViewaba"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Abazira ennyo abatussoka"
-                    android:textSize="20dp" />
-
-
-                <TextView
-                    android:id="@+id/taba"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Balwana nnyo muntalo"
-                    android:textSize="20dp" />
-
-
-                <TextView
-                    android:id="@+id/ta"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Nebalyagala nnyo eggwanga lyaffe"
-                    android:textSize="20dp" />
-
-
-                <TextView
-                    android:id="@+id/teaba"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Naffe, tulyagalenga"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/teab"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textSize="2dp" />
-
-                <TextView
-                    android:id="@+id/teppoView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="Twesiimye nnyo"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
-
-                <TextView
-                    android:id="@+id/texthxpoView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="twesiimye nnyo"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
-
-                <TextView
-                    android:id="@+id/jjkojView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="olwa Buganda yaffe"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
-
-                <TextView
-                    android:id="@+id/extjjkoView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="ekitiibwa kya Buganda kyava dda"
-                    android:textSize="15dp"
-                    android:paddingLeft="60dp"/>
-
-                <TextView
-                    android:id="@+id/texe"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="Naffe tukikuumenga"
-                    android:textSize="15dp"
-                    android:paddingLeft="70dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
-                <TextView
-                    android:id="@+id/te3xexpoView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Ffe abaana ba leero katulwane"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/te30xexpoView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Okukuza obuganda"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/te30xexpoVie"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:text="nga tujjikira nnyo bajjajja baffe"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/te30xexpoVi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Abafirira ensi yaffe"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/txexpoVi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"
                     />
 
-
-                <TextView
-                    android:id="@+id/t5oView"
+                <Button
+                    android:id="@+id/textViewa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="Musota"
+                    android:background="#4F4F4F"
                     android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="Twesiimye nnyo"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
 
-                <TextView
-                    android:id="@+id/textjjyView"
+                <Button
+                    android:id="@+id/textViewh2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="Bbaffe"
+                    android:background="#4F4F4F"
                     android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="twesiimye nnyo"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
 
-                <TextView
-                    android:id="@+id/jjko6iew"
+                <Button
+                    android:id="@+id/textVbiew2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="Ssabataka"
+                    android:background="#4F4F4F"
                     android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="olwa Buganda yaffe"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
 
-                <TextView
+                <Button
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ssalongo"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/tehhxtView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ccuucu"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/texghtView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Namunswa"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/texthView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lukeberwa"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/textVibew2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mulyazzaawo"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/textjjView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ssemanda"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+
+
+                <Button
+                    android:id="@+id/textVibmew2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mpologoma"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/texxxtView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sseggwanga"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/textVihkew2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Musisi"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/textVi90ew2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ssekkesa"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="23dp"/>
+
+                <Button
+                    android:id="@+id/textV1iew2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maaso moogi"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ssabasajja"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/te87xtView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:text="Ssempeebwa"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/te09xtView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ssemunywa"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+                <Button
+                    android:id="@+id/texxtView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ssemwanga"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <Button
+                    android:id="@+id/te002"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lukeberwa"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <Button
+                    android:id="@+id/tex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Empalabwe"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+
+                <Button
+                    android:id="@+id/ti2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ppemenku"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/w2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ssebunya"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <Button
+                    android:id="@+id/tetView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mpologoma"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/excffjxtView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sseggwanga"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <Button
+                    android:id="@+id/texView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Omutanda"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <Button
+                    android:id="@+id/te6789"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bukajumbe"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <Button
+                    android:id="@+id/top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maasomoogi"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/tii"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Empalabwe"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+
+
+                <Button
+                    android:id="@+id/texcffj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bukaajumbe"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp"/>
+
+
+                <Button
+                    android:id="@+id/texcff99jxtView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Miranda"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/t90"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mulwanya mmuli"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp"/>
+
+
+
+
+                <Button
+                    android:id="@+id/texcffjxtView0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Luwangula"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/texcffjxtView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lumoma nantawetwa"
+                    android:background="#4F4F4F"
+                    android:editable="false"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp"/>
+
+                <Button
                     android:id="@+id/t"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="Mufumbyagganda"
+                    android:background="#4F4F4F"
                     android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="ekitiibwa kya Buganda kyava dda"
-                    android:textSize="15dp"
-                    android:paddingLeft="60dp"/>
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp"/>
 
-                <TextView
-                    android:id="@+id/te0ew"
+                <Button
+                    android:id="@+id/texnntView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="KabwejunBira"
+                    android:background="#4F4F4F"
                     android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="Naffe tukikuumenga"
-                    android:textSize="15dp"
-                    android:paddingLeft="70dp"/>
-                <TextView
-                    android:id="@+id/tVi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textSize="20dp" />
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp"/>
 
-                <TextView
-                    android:id="@+id/te30x"
+                <Button
+                    android:id="@+id/texbhtView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="Ssebuufubwango"
+                    android:background="#4F4F4F"
                     android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Nze nayimba ntya nesitenda"
-                    android:textSize="20dp" />
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp"/>
 
-                <TextView
-                    android:id="@+id/te3"
+                <Button
+                    android:id="@+id/texbtView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="Nntalinnya mu kateebe"
+                    android:background="#4F4F4F"
                     android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Ssabasajja kabaka"
-                    android:textSize="20dp" />
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp"/>
 
-                <TextView
-                    android:id="@+id/te3Vi"
+                <Button
+                    android:id="@+id/t77"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="Omuti ogubala ensimbi n'ebikomo"
+                    android:background="#4F4F4F"
                     android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Asanira afuge obuganda bwona"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/te300"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Naffe nga tumwesiga"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/te789"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textSize="20dp" />
-
-
-                <TextView
-                    android:id="@+id/textexpoViewa"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="Twesiimye nnyo"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
-
-                <TextView
-                    android:id="@+id/texiew"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="twesiimye nnyo"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
-
-                <TextView
-                    android:id="@+id/jew"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="olwa Buganda yaffe"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
-
-                <TextView
-                    android:id="@+id/eiew"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="ekitiibwa kya Buganda kyava dda"
-                    android:textSize="15dp"
-                    android:paddingLeft="60dp"/>
-
-                <TextView
-                    android:id="@+id/tiew"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="Naffe tukikuumenga"
-                    android:textSize="15dp"
-                    android:paddingLeft="70dp"/>
-
-                <TextView
-                    android:id="@+id/tex3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:textSize="10dp"
-                    android:textAlignment="center"/>
-
-                <TextView
-                    android:id="@+id/t300"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Katonda omulungi ow'ekisa"
-                    android:textSize="20dp" />
-                <TextView
-                    android:id="@+id/te30011"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Otubeere mukama"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/te30"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Otubunduguleko emikisa gyo era"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/te123300"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:text="Baffe omukumenga"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/te3bemba00"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/textex0poView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="Twesiimye nnyo"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
-
-                <TextView
-                    android:id="@+id/textj8jkoexpoView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="twesiimye nnyo"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
-
-                <TextView
-                    android:id="@+id/jjkoex7poView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="olwa Buganda yaffe"
-                    android:textSize="15dp"
-                    android:paddingLeft="80dp"/>
-
-                <TextView
-                    android:id="@+id/extjjkoex8poView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="ekitiibwa kya Buganda kyava dda"
-                    android:textSize="15dp"
-                    android:paddingLeft="60dp"/>
-
-                <TextView
-                    android:id="@+id/texexpoVieuw"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:editable="false"
-                    android:textColor="#040303"
-                    android:textStyle="italic"
-                    android:text="Naffe tukikuumenga"
-                    android:textSize="15dp"
-                    android:paddingLeft="70dp"/>
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="textStart"
+                    android:textSize="15dp"/>
 
 
 
 
             </LinearLayout>
         </LinearLayout>
+
     </ScrollView>
+</LinearLayout>
     <RelativeLayout
         android:layout_width="300dp"
         android:layout_height="match_parent"

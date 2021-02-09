@@ -53,7 +53,7 @@ public class Emyezi extends AppCompatActivity {
     public  void ClickEbisoko(View view){
         redirectActivity(this,Ebisoko.class);
     }
-    public  void ClickA(View view){
+    public  void ClickZ(View view){
         redirectActivity(this,Amannya.class);
     }
     public  void ClickEkitiibwa(View view){

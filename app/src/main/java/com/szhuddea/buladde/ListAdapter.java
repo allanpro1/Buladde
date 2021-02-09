@@ -82,7 +82,7 @@ public class ListAdapter extends BaseExpandableListAdapter {
             view = inflater.inflate(R.layout.child_item, null);
 
         }
-        TextView items = view.findViewById(R.id.textChild);
+        TextView items = view.findViewById(R.id.textParent);
         items.setText(childName);
         return view;
     }

@@ -7,6 +7,16 @@
     tools:context=".Ekitiibwa"
     android:id="@+id/drawer_layout">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+>
+        <include
+            layout="@layout/main6"/>
+
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -22,8 +32,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            layout="@layout/main6"/>
 
         <TextView
             android:id="@+id/textView"
@@ -563,7 +571,7 @@
     </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
+    </LinearLayout>
     <RelativeLayout
         android:layout_width="300dp"
         android:layout_height="match_parent"

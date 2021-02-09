@@ -56,7 +56,7 @@ public class Amasaza extends AppCompatActivity {
     public  void ClickEkitiibwa(View view){
         redirectActivity(this,Ekitiibwa.class);
     }
-    public  void ClickA(View view){
+    public  void ClickZ(View view){
         redirectActivity(this,Amannya.class);
     }
     public  void ClickLogout (View view){

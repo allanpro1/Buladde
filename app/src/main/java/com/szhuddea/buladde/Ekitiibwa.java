@@ -9,11 +9,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
-
-import static com.szhuddea.buladde.MainActivity.closeDrawer;
 //
-//import static com.szhuddea.buladde.MainActivity.closeDrawer;
-//import static com.szhuddea.buladde.MainActivity.closeDrawer;
 
 public class Ekitiibwa extends AppCompatActivity {
 
@@ -30,7 +26,7 @@ public class Ekitiibwa extends AppCompatActivity {
 
     }
     public void ClickLogo(View view){
-        closeDrawer(drawerLayout);
+        MainActivity.closeDrawer(drawerLayout);
     }
     public void ClickHome(View view){
         MainActivity.redirectActivity(this,MainActivity.class);
@@ -50,13 +46,14 @@ public class Ekitiibwa extends AppCompatActivity {
         redirectActivity(this,Ennaku.class);
     }
     public  void ClickAmasaza(View view){ redirectActivity(this,Amasaza.class); }
-    public  void ClickEbisoko(View view){
-        redirectActivity(this,Ebisoko.class);
-    }
     public  void ClickAbout(View view){
         redirectActivity(this,Engero.class);
     }
-    public  void ClickA(View view){
+    public  void ClickEbisoko(View view){
+        redirectActivity(this,Ebisoko
+                .class);
+    }
+    public  void ClickZ(View view){
         redirectActivity(this,Amannya.class);
     }
     public  void ClickLogout (View view){
@@ -99,6 +96,9 @@ public class Ekitiibwa extends AppCompatActivity {
     @Override
     protected void onPause(){
         super.onPause();
-        closeDrawer(drawerLayout);
+        MainActivity.closeDrawer(drawerLayout);
     }
+
+
+
 }

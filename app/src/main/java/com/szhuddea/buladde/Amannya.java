@@ -10,8 +10,6 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import static com.szhuddea.buladde.MainActivity.closeDrawer;
-
 public class Amannya extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
@@ -20,7 +18,7 @@ public class Amannya extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_amannya);
-        setContentView(R.layout.activity_engero);
+//        setContentView(R.layout.activity_engero);
         drawerLayout = findViewById(R.id.drawer_layout);
     }
     public void ClickMenu(View view){
@@ -28,12 +26,12 @@ public class Amannya extends AppCompatActivity {
 
     }
     public void ClickLogo(View view){
-        closeDrawer(drawerLayout);
+        MainActivity.closeDrawer(drawerLayout);
     }
     public void ClickHome(View view){
         MainActivity.redirectActivity(this,MainActivity.class);
     }
-    public  void ClickA(View view){
+    public  void ClickZ(View view){
         recreate();
     }
 
@@ -48,11 +46,15 @@ public class Amannya extends AppCompatActivity {
         redirectActivity(this,Ennaku.class);
     }
     public  void ClickAmasaza(View view){ redirectActivity(this,Amasaza.class); }
+    public  void ClickAbout(View view){
+        redirectActivity(this,Engero.class);
+    }
+    public  void ClickEkitiibwa(View view){
+        redirectActivity(this,Ekitiibwa.class);
+    }
     public  void ClickEbisoko(View view){
         redirectActivity(this,Ebisoko.class);
     }
-    public  void ClickEkitiibwa(View view) { redirectActivity(this,Ekitiibwa.class); }
-    public  void ClickAbout(View view) { redirectActivity(this,Engero.class); }
     public  void ClickLogout (View view){
         logout(this);
     }
@@ -93,6 +95,8 @@ public class Amannya extends AppCompatActivity {
     @Override
     protected void onPause(){
         super.onPause();
-        closeDrawer(drawerLayout);
+        MainActivity.closeDrawer(drawerLayout);
     }
+
+
 }
