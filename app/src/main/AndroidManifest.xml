@@ -10,12 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+
         <activity android:name=".Ennaku" />
         <activity android:name=".Emyezi" />
         <activity android:name=".Ekitiibwa" />
@@ -24,6 +20,13 @@
         <activity android:name=".Ekika" />
         <activity android:name=".Engero" />
         <activity android:name=".Amannya" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

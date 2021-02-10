@@ -1,5 +1,5 @@
 package com.szhuddea.buladde;
-//package com.szhuddea.buladde.splashscreen;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -46,11 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void ClickDashboard(View view){
 
-        ProgressDialog = new ProgressDialog(MainActivity.this);
-        ProgressDialog.show();
-        ProgressDialog.setContentView(R.layout.progress_dialog);
-        ProgressDialog.getWindow().setBackgroundDrawableResource(
-                android.R.color.transparent);
 
 
 
@@ -58,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        };
         MainActivity.redirectActivity(this,Ekika.class );
+
         }
 
 

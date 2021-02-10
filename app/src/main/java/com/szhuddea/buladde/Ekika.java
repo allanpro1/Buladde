@@ -2,6 +2,7 @@ package com.szhuddea.buladde;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,6 +26,7 @@ import static com.szhuddea.buladde.MainActivity.closeDrawer;
 
 public class Ekika extends AppCompatActivity {
     private DrawerLayout drawerLayout;
+    private ProgressDialog ProgressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,12 @@ public class Ekika extends AppCompatActivity {
         setContentView(R.layout.kika_new);
         drawerLayout = findViewById(R.id.drawer_layout);
 
+        ProgressDialog = new ProgressDialog(Ekika.this);
+        ProgressDialog.setContentView(R.layout.progress_dialog);
+        ProgressDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
+
+//        showProgressDialog(true);
 
         // Lookup the recyclerview in activity layout
         RecyclerView rvContacts = (RecyclerView) findViewById(R.id.rvContacts);
@@ -47,9 +55,21 @@ public class Ekika extends AppCompatActivity {
         rvContacts.setAdapter(adapter);
         // Set layout manager to position the items
         rvContacts.setLayoutManager(new LinearLayoutManager(this));
-        // That's all!
 
 
+
+//        showProgressDialog(false);
+
+
+    }
+
+    private void showProgressDialog(boolean show) {
+        if(show){
+            ProgressDialog.show();
+        }
+        else{
+            ProgressDialog.dismiss();
+        }
     }
 
     private List<kikaModel> createKikaModels() {
