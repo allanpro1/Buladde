@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:id="@+id/imag"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/engoma"
+        tools:srcCompat="@drawable/engoma"
+
+        />
+
+    <Button
+        android:id="@+id/kikabtn"
+        android:layout_width="407dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="ekika: Abalangira"
+        android:textColor="@color/ic_launcher_background"
+        android:textAlignment="textStart"
+        android:background="#050300"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/kabbirobtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#050300"
+
+        android:text="Akabbiro: ?  "
+        android:textAlignment="textStart"
+        android:textColor="@color/ic_launcher_background"
+        android:textStyle="italic" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/mukulubtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#050300"
+
+        android:text="Omukulu w'ekika:   Ssaabataka "
+        android:textAlignment="textStart"
+        android:textColor="@color/ic_launcher_background"
+        android:textStyle="italic" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/butakabtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#050300"
+
+        android:text="Obutaka: Kaliiti, Busiro"
+        android:textAlignment="textStart"
+        android:textColor="@color/ic_launcher_background"
+        android:textStyle="italic" />
+
+</LinearLayout>

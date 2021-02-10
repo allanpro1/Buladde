@@ -19,8 +19,9 @@
         <ExpandableListView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/expandListVie"
-            android:paddingTop="60dp"/>
+            android:id="@+id/expandListVie"/>
+<!--            android:paddingTop="60dp"-->
+
 
 
 
