@@ -5,7 +5,8 @@
     android:background="#090909"
     android:padding="?android:listPreferredItemPaddingLeft"
     android:paddingLeft="45dp"
-    android:paddingStart="45dp">
+    android:paddingStart="45dp"
+    >
 
     <TextView
         android:layout_width="wrap_content"

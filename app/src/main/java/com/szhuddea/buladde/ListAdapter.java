@@ -82,7 +82,7 @@ public class ListAdapter extends BaseExpandableListAdapter {
             view = inflater.inflate(R.layout.child_item, null);
 
         }
-        TextView items = view.findViewById(R.id.textParent);
+        TextView items = view.findViewById(R.id.textChild);
         items.setText(childName);
         return view;
     }
@@ -96,3 +96,5 @@ public class ListAdapter extends BaseExpandableListAdapter {
         return true;
     }
 }
+
+

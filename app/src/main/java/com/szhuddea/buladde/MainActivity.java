@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
            drawerLayout.closeDrawer(GravityCompat.START);
         }
     }
-    public void ClickHome(View view){
-        recreate();
-    }
+//    public void ClickHome(View view){
+//        recreate();
+//    }
 
     public void ClickDashboard(View view){
 
@@ -74,10 +74,17 @@ public class MainActivity extends AppCompatActivity {
     public  void ClickEnnaku(View view){
         redirectActivity(this,Ennaku.class);
     }
-    public  void ClickAbout(View view){ redirectActivity(this,Engero.class); }
+    public  void ClickAbout(View view){
+        redirectActivity(this,Engero.class);
+    }
+//    public  void ClickAbout(View view){ redirectActivity(this,Engero.class); }
     public  void ClickEbisoko(View view){
         redirectActivity(this,Ebisoko.class);
     }
+    public  void ClickAmasaza(View view){
+        redirectActivity(this,Amasaza.class);
+    }
+
     public  void ClickEkitiibwa(View view){
         redirectActivity(this,Ekitiibwa.class);
     }
@@ -122,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
         closeDrawer(drawerLayout);
     }
 
+    
 
     //
 //    @Override  void onPause() {

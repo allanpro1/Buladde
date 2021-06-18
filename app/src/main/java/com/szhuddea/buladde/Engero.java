@@ -23,123 +23,68 @@ import static com.szhuddea.buladde.MainActivity.closeDrawer;
 //import static com.szhuddea.buladde.MainActivity.closeDrawer;
 //import static com.szhuddea.buladde.MainActivity.closeDrawer;
 
-public class Engero extends AppCompatActivity {
-    DrawerLayout drawerLayout;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_engero);
-        drawerLayout = findViewById(R.id.drawer_layout);
-
-        ParentListItems = new LinkedHashMap<>();
-        for (String HoldItem : ParentList) {
-            if (HoldItem.equals("Atanayita yita")) {
-                LoadChild(planetName);
-            } else if (HoldItem.equals("kange")) {
-                LoadChild(monthName);
-            } else if (HoldItem.equals("Nyini mufu")) {
-                LoadChild(P);
-            } else if (HoldItem.equals("Gwosussa emwanyi")) {
-                LoadChild(x);
-            } else if (HoldItem.equals("Bakuyita embuga")) {
-                LoadChild(y);
-            } else if (HoldItem.equals("Baleke bagggwe akanyomagano")) {
-                LoadChild(AK);
-            } else if (HoldItem.equals("Balikomya eyo ne bazza")) {
-                LoadChild(MU);
-            } else if (HoldItem.equals("Balimutta jjo")) {
-                LoadChild(VU);
-            } else if (HoldItem.equals("Balo embogu yamutta")) {
-                LoadChild(XU);
-            } else if (HoldItem.equals("Bannange bangi")) {
-                LoadChild(ZU);
-            } else if (HoldItem.equals("Bandaba")) {
-                LoadChild(TU);
-            } else if (HoldItem.equals("Byampuna")) {
-                LoadChild(OU);
-            } else if (HoldItem.equals("Ebukojja Banjagala")) {
-                LoadChild(PU);
-            } else if (HoldItem.equals("Ebyokulya tebyandeetaa")) {
-                LoadChild(LU);
-            } else if (HoldItem.equals("Embaga enyuma kiro")) {
-                LoadChild(AU);
-            } else if (HoldItem.equals("Linda kiggweeyo")) {
-                LoadChild(BU);
-            } else if (HoldItem.equals("kuno kwe kwaffe")) {
-                LoadChild(JU);
-            } else if (HoldItem.equals("Kaliba kasajja")) {
-                LoadChild(NU);
-            } else if (HoldItem.equals("Ensimbi zabula")) {
-                LoadChild(KU);
-            } else if (HoldItem.equals("Bukya mbirya")) {
-                LoadChild(DU);
-            } else if (HoldItem.equals("Sebuwoomi bwa nswa")) {
-                LoadChild(U1);
-            } else if (HoldItem.equals("Byakuno")) {
-                LoadChild(FU);
-            } else if (HoldItem.equals("Agamyuka omutezi")) {
-                LoadChild(U2);
-            } else if (HoldItem.equals("Omukisa nkukunyi")) {
-                LoadChild(U4);
-            } else if (HoldItem.equals("Buyisi bwoomu")) {
-                LoadChild(U3);
-            } else if (HoldItem.equals("Atya omusana")) {
-                LoadChild(U5);
-            } else
-                LoadChild(defaultName);
-            ParentListItems.put(HoldItem, ChildListp);
-        }
-
-        expandableListView = findViewById(R.id.expandListVie);
-        final ExpandableListAdapter expandableListAdapter = new ListAdapter(this, ParentList, ParentListItems);
-        expandableListView.setAdapter(expandableListAdapter);
 
 
+public class Engero<preparing> extends AppCompatActivity {
 
 
+    private DrawerLayout drawerLayout;
+    private Object SearchableActivity;
 
-    }
-    public void ClickMenu(View view){
+
+//    private DrawerLayout drawerLayout;
+
+    public void ClickMenu(View view) {
         MainActivity.openDrawer(drawerLayout);
 
     }
-    public void ClickLogo(View view){
-       closeDrawer(drawerLayout);
-    }
-    public void ClickHome(View view){
-        MainActivity.redirectActivity(this,MainActivity.class);
-    }
-    public  void ClickAbout(View view){
-       recreate();
+
+    public void ClickLogo(View view) {
+        closeDrawer(drawerLayout);
     }
 
-   public void ClickDashboard(View view){
-       MainActivity.redirectActivity(this,Ekika.class );
-   }
+    public void ClickHome(View view) {
+        MainActivity.redirectActivity(this, MainActivity.class);
+    }
 
-    public  void ClickEmyezi(View view){
-        redirectActivity(this,Emyezi.class);
+    public void ClickAbout(View view) {
+        recreate();
     }
-    public  void ClickEnnaku(View view){
-        redirectActivity(this,Ennaku.class);
+
+    public void ClickDashboard(View view) {
+        MainActivity.redirectActivity(this, Ekika.class);
     }
-    public  void ClickAmasaza(View view){ redirectActivity(this,Amasaza.class); }
-    public  void ClickEbisoko(View view){
-        redirectActivity(this,Ebisoko.class);
+
+    public void ClickEmyezi(View view) {
+        redirectActivity(this, Emyezi.class);
     }
-    public  void ClickEkitiibwa(View view){
-        redirectActivity(this,Ekitiibwa.class);
+
+    public void ClickEnnaku(View view) {
+        redirectActivity(this, Ennaku.class);
     }
-    public  void ClickZ(View view){
-        redirectActivity(this,Amannya.class);
+
+    public void ClickAmasaza(View view) {
+        redirectActivity(this, Amasaza.class);
     }
-    public  void ClickLogout (View view){
+
+    public void ClickEbisoko(View view) {
+        redirectActivity(this, Ebisoko.class);
+    }
+
+    public void ClickEkitiibwa(View view) {
+        redirectActivity(this, Ekitiibwa.class);
+    }
+
+    public void ClickZ(View view) {
+        redirectActivity(this, Amannya.class);
+    }
+
+    public void ClickLogout(View view) {
         logout(this);
     }
 
 
-    public static void logout(final Activity activity){
+    public static void logout(final Activity activity) {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setTitle("Ggalawo");
 
@@ -148,7 +93,7 @@ public class Engero extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 activity.finishAffinity();
-                System.exit( 0);
+                System.exit(0);
             }
         });
         builder.setNegativeButton("Nedda", new DialogInterface.OnClickListener() {
@@ -165,167 +110,341 @@ public class Engero extends AppCompatActivity {
     }
 
 
-    public static void redirectActivity(Activity activity ,Class aClass) {
-        Intent intent = new Intent(activity,aClass);
+    public static void redirectActivity(Activity activity, Class aClass) {
+        Intent intent = new Intent(activity, aClass);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         activity.startActivity(intent);
-
-
-
 
 
     }
 
     @Override
-    protected void onPause(){
+    protected void onPause() {
         super.onPause();
         closeDrawer(drawerLayout);
     }
-    List<String> ChildListp;
+
+    List<String> ChildList;
     Map<String, List<String>> ParentListItems;
     ExpandableListView expandableListView;
 
-
-
-    List<String> ParentList= new ArrayList<>();
-    private Object Menu;
+    List<String> ParentList = new ArrayList<>();
 
     {
-        ParentList.add("Atanayita yita");
-        ParentList.add("kange");
-        ParentList.add("Nyini mufu");
-        ParentList.add("Gwosussa emwanyi");
-        ParentList.add("Bakuyita embuga");
-        ParentList.add("Baleke bagggwe akanyomagano");
-        ParentList.add("Balikomya eyo ne bazza");
-        ParentList.add("Balimutta jjo");
-        ParentList.add("Balo embogo yamutta");
-        ParentList.add("Bannange bangi");
-        ParentList.add("Bandaba");
-        ParentList.add("Byampuna");
-        ParentList.add("Ebukojja banjagala");
-        ParentList.add("Ebyokulya tebyandeeta");
-        ParentList.add("Egindi wala ");
-        ParentList.add("Embaga enyuma kiro ");
-        ParentList.add("Linda kiggweeyo");
-        ParentList.add("Kuno kwe kwaffe");
-        ParentList.add("Kaliba kasajja");
-        ParentList.add("Ensimbi zabula");
-        ParentList.add("Bukya mbirya");
-        ParentList.add("Byakuno");
-        ParentList.add("Sebuwoomi bwa nswa");
-        ParentList.add("Agamyuka omutezi");
-        ParentList.add("Buyisi bwoomu");
-        ParentList.add("Omukisa nkukunyi");
-        ParentList.add("Atya omusana");
+        ParentList.add("Okulya mundago");
+        ParentList.add("Okuwunya ku gwa ddyo");
+        ParentList.add("Okusiyagguka");
+        ParentList.add("Okugenda okulunda emobogo");
+        ParentList.add("Okwetyabira akalimu obuwuka");
+        ParentList.add("okwekulira embazzi kukugulu");
+        ParentList.add("Okwoza ku mmunye");
+        ParentList.add("Okukweka enjala");
+        ParentList.add("Okuliisa ebijanjalo empiso");
+        ParentList.add("Okumenya mu jjenje ekkalu");
+        ParentList.add("Okwesiwa amagengere");
+        ParentList.add("Okugaangatanyaekiwanga mu ngalo");
+        ParentList.add("Okutema ebisiki");
+        ParentList.add("Okusimba kasooli");
+        ParentList.add("okujja omukono mu ngabo");
+        ParentList.add("Okunyenya agaliba enjole");
+        ParentList.add("Okulinnya mumusaayi");
+        ParentList.add("Kinywa na mpindi");
+        ParentList.add("Okweyimbamu ogwa kabugu");
+        ParentList.add("Enkoko okugikwata omumwa");
+        ParentList.add("Okuyisa omukka mu kisero");
+        ParentList.add("Okukirira e zira kumwa");
+        ParentList.add("Okufuuyira endiga omulere");
+        ParentList.add("Okusiika ebinyomo");
+        ParentList.add("Okufuuka omusu gw'ekanyanya");
+        ParentList.add("Okukaabya omuntu akayirigombe");
+        ParentList.add("Okukuba obulatti");
+        ParentList.add("Ekintu okuba nga n'owemindi asena");
+        ParentList.add("Olubuto okuba mu mannyo");
+        ParentList.add("Olubuto okuba mu mumugongo");
+        ParentList.add("Okukotakoota mu ga lumonde");
+        ParentList.add("Okugenda ekaganga");
+        ParentList.add("Okuteeka nga aga lubigi");
+        ParentList.add("Gaboggola g'ekikere kyenamugongo");
+        ParentList.add("Okwewugulaza ng'Omunyoro alya engabi");
+        ParentList.add("Okweyinula ng' omusimbu agenda ku lutabaalo");
+        ParentList.add("OkukuumaOkukuuma ekintu nga akalira k'omwana");
+        ParentList.add("Emundu emenye");
+        ParentList.add("Okutema kulw'enamuganga");
+        ParentList.add("Okuyita sikaala ebuddo");
+        ParentList.add("Okuzannya n'owebiti");
+        ParentList.add("Okukaaba aga waggoonya");
+        ParentList.add("Okudda e Mbaale mu baganda banno");
+        ParentList.add("Okusanga nga galinnye olunnyo");
+        ParentList.add("Okukuba ey'abageye");
+        ParentList.add("Balyegiira ng'ensimbi egula muwogo");
+        ParentList.add(" Okwetala nga Namutale omunyageko ente");
 
     }
 
-    String[]planetName = {
-            "y'atenda nnyina okufumba. Lutuyigiriza obuteyibalanga."
+    String[] planetName = {
+            "Kitegeeza kuyimba"};
 
+    String[] monthName = {"kulya"};
+
+    String[] P = {"Kutambula"};
+
+    String[] x = {"Kufa"};
+
+    String[] a = {"Kweretera bizibu"};
+
+    String[] b = {"Kweretera mitawaana"};
+    String[] c = {"Kukaaba"};
+
+    String[] d = {"Kulwana"
     };
-
-    String[]monthName = {
-            "kakira kaffe. olugero luno lutuyigiriza okwekolerera"
+    String[] e = {"Okukola ekintu nga ogayaala"
     };
-
-    String[]P = {
-            "Y'akwata ewawunya. lutuyigiriza okwekwatirangamu mumirimu"
+    String[] jjenje = {"Okukola ekintu ekyangu"
     };
-
-    String[] x = {
-            "Omusanga mitala nga awungula.  Lutuyigiriza obutanyooma oba okusosola abantu"
+    String[] ssiwa = {
+            "Okunywa omwenge"
     };
-
-    String[]y ={
-            "Sibuganzi. Buli gwe bayita embuga tebamuyita kumuwa birungi. Oluusi baba bamuyita kumukuba oba kumusiba. Abamu kyebava batya okuyitibwa embuga. "
+    String[] kwebaka = {
+            "Kwebaka"
     };
-    String[]AK ={
-            "Naga gwoyagala y'ali kungulu. Mukwano gw’omuntu bw’aba ng’alwana n’omuntu gw’asinza amaanyi, munne taba na kweralikirira, kyava tayagala na kubataasa mangu"
-
+    String[] siki = {
+            "Kwebaka"
     };
-    String[]MU ={
-            "Yemunyoro agenda.  Olugero lutuyigiriza butatya kwanganga bizibu"
-
-    };
-    String[]VU ={
-            "Tekikulobera kumusenga. Omuntu gwe basalidde ogw’okufa ne bamulaga n’olunaku olw’okuttibwa ayinza okusonyiyibwa n’atattibwa. N’olwekyo abaagala okubeera naye tebasaana kumuddukako"
-
-    };
-
-    String[]XU ={
-            "Nti bwatyo bwazifumita.   Bulijjo tusaana okuwulirizanga obulungi ebitugambibwa"
-
-    };
-    String[]ZU ={
-            "Nga tonagwa wabi.   Omuntu bw’agwa mu kabi nga banne bamwabulira"
-
-    };
-    String[]TU ={
-            "Afunda Kumunaabo. Omuntu yenna Tasaanye kusirika nga waliwo embeera etamusanyusa"
-
-    };
-    String[]OU ={
-            "Nga akubbye wa munju. Omuntu ow’omu nju bw’akubba n’omumanya ebigambo bikulema okwogera amangu. "
+    String[] ok = {
+            "Kutambula"
     };
 
-    String[]PU ={
-            "Nga add ku nyoko waali .Mu mpisa z’abaganda, ebukojja teba wammwe era baganda ba nnyoko bwe batabaayo, tobaayo na ssimba. "
-    };
-    String[]LU ={
-            "Omugenyi akiina nnyinimu .Omugenyi bw’atalya bugenyi gy’akyadde n’asiibuza nnyinimu ebigambo ebyo, aba ayoggedde kaati nti anyiize olw’obutamuwa bugenyi. "
-    };
-    String[]GU ={
-            "Nga tekuli Mumanyi .Gw’oyagala ennyo ne bw’abeera ewala era owaliriza n’otuukayo omulabeko. "
-    };
-    String[]AU ={
-            "Bwatagenda kubba agenda kulwana .Abakozi b'ebikolobera bagala nnyo ebinyumu eby'ekiro. "
-    };
-    String[]BU ={
-            "Afumita Mukira .Tusaana okukola buli kimu mu kaseera kayo akatuufu. "
-    };
-    String[]JU ={
-            "Takulaga gyasula. "
-    };
-    String[]NU ={
-            "Akuliisa engo. Okuwana ennyo omuntu kiyinza okumuletera okukola ensobi "
-    };
-    String[]KU ={
-            "Asiiba waka. Obugayavu sibulungi "
-    };
-    String[]DU ={
-            "Omunya gujiira ku nju "
-    };
-    String[]FU ={
-            "Tasenguka agoba bajja. Omuntu agugamba nti awantu wabi nga ate ye tavaawoa aba takwagaliza kubeerako "
-    };
-    String[]U1 ={
-            "Natalya mutima aguliira omwo. Ekintu bwekiba ekirungi, oli tafaayo kukiri munda "
-    };
-    String[]U2 ={
-            "N'akasolo "
-    };
-    String[]U3 ={
-            "Nsega y'ebika. bwobeera wekka oyinza ofuna obuzibu abantu nebatamanya "
-    };
-    String[]U4 ={
-            "tegutuulirwa. ekintu kyonna nga  kaykolebwa kubeera kikyo era luliba olwo nokifuna "
-    };
-    String[]U5 ={
-            "Talya bwami. Omuntu atya okuyita mubugubi aba tagenda kufuna ekyo kyayagala "
+    String[] tip = {
+            "Kufa"
     };
 
-    String[]defaultName = {
+    String[] ko = {
+            "Kuzina"
+    };
+    String[] lin = {
+            " Kuwerekera muntu"
+    };
+
+    String[] pin = {
+            "Ekintu okuba okumpi ennyo"
+    };
+
+    String[] enkoko = {
+            "Kueera"
+    };
+
+    String[] sero = {
+            "Okukola ekintu ekyangu"
+    };
+    String[] mwa = {
+            "kufa"
+    };
+    String[] ndiga = {
+            "Okukola ekintu ekitagasa"
+    };
+
+    String[] binyomo = {
+            "Okukola ekintu ekitalina mugaso"
+    };
+
+    String[] kanyanya = {
+            "Okubula"
+    };
+    String[] aka = {
+            "okumubonyabonya"
+    };
+    String[] lati = {
+            "kusanyuka"
+    };
+    String[] mindi = {
+            "ekintu okuba nga kingi nnyo"
+    };
+    String[] mannyo = {
+            "kiteggeza kukkuta nnyo"
+    };
+
+
+    String[] njala = {
+            "Enjala okuba nga ekuluma"
+    };
+
+    String[] lumonde = {
+            "Okukola ekintu nga tekigasa"
+    };
+
+    String[] iok = {
+            "Kufa"
+    };
+    String[] defaultName = {
             "wano wakyakolebwako"
     };
+    String[] ob = {
+            "Okwetuga"
+    };
+    String[] ob1 = {
+            "Kwewombeeka"
+    };
+    String[] ob2 = {
+            "Ekintu nga kinene ate nga kyakitiibwa"
+    };
+    String[] ob3 = {
+            "ye muntu akola ekintu ng'amanyi kikyamu kyokka n’agenda mu maaso n'okukikola."
+    };
+    String[] ob4 = {
+            "okukola ekintu naye nga okimayi kiyina okukuleetera obuzibu."
+    };
+    String[] ob5 = {
+            "Kukuuma kintu butiribiri."
+    };
+    String[] ob6 = {
+            "Ekintu kyewesiga ennyo."
+    };
+    String[] ob7 = {
+            "Okukola ekintu ekizibu ennyo"
+    };
+    String[] ob8 = {
+            "Kufuna kintu kirungi kyobadde tosuubira"
+    };
+    String[] ob9 = {
+            "Kwanguyirwa mu kyokola"
+    };
+    String[] ob10 = {
+            "Kukudaala"
+    };
+    String[] ob11 = {
+            "Kuboola oba kusosola"
+    };
+    String[] ob12 = {
+            "Kunga baakamala okulya"
+    };
+    String[] ob13 = {
+            "Butaterera mu kifo kimu"
+    };
+    String[] ob14 = {
+            "okukola ekintu nekikuviiramu obuzibu"
+    };
+    String[] ob15 = {
+            "Kikozesebwa kumuntu nga tatuula mukifo kimu" +
+                    ""
+    };
+
+    @Override
+    protected void onCreate(Bundle savedInstance) {
+        super.onCreate(savedInstance);
+        setContentView(R.layout.activity_engero);
 
 
-    private void LoadChild(String[] ParentElementName) {
-        ChildListp = new ArrayList<>();
-        Collections.addAll(ChildListp, ParentElementName);
+        ParentListItems = new LinkedHashMap<>();
+        for (String HoldItem : ParentList) {
+            if (HoldItem.equals("Okulya mundago")) {
+                LoadChild(planetName);
+            } else if (HoldItem.equals("Okuwunya ku gwa ddyo")) {
+                LoadChild(monthName);
+            } else if (HoldItem.equals("Okusiyagguka")) {
+                LoadChild(P);
+            } else if (HoldItem.equals("Okugenda okulunda emobogo")) {
+                LoadChild(x);
+            } else if (HoldItem.equals("Okwetyabira akalimu obuwuka")) {
+                LoadChild(a);
+            } else if (HoldItem.equals("okwekulira embazzi kukugulu")) {
+                LoadChild(b);
+            } else if (HoldItem.equals("Okwoza ku mmunye")) {
+                LoadChild(c);
+            } else if (HoldItem.equals("Okukweka enjala")) {
+                LoadChild(d);
+            } else if (HoldItem.equals("Okuliisa ebijanjalo empiso")) {
+                LoadChild(e);
+            } else if (HoldItem.equals("Okumenya mu jjenje ekkalu")) {
+                LoadChild(jjenje);
+            } else if (HoldItem.equals("Okwesiwa amagengere")) {
+                LoadChild(ssiwa);
+            } else if (HoldItem.equals("Okugaangatanyaekiwanga mu ngalo")) {
+                LoadChild(kwebaka);
+            } else if (HoldItem.equals("Okutema ebisiki")) {
+                LoadChild(siki);
+            } else if (HoldItem.equals("Okusimba kasooli")) {
+                LoadChild(ok);
+            } else if (HoldItem.equals("okujja omukono mu ngabo")) {
+                LoadChild(tip);
+            } else if (HoldItem.equals("Okunyenya agaliba enjole")) {
+                LoadChild(ko);
+            } else if (HoldItem.equals("Okulinnya mumusaayi")) {
+                LoadChild(lin);
+            } else if (HoldItem.equals("Kinywa na mpindi")) {
+                LoadChild(pin);
+            } else if (HoldItem.equals("Okweyimbamu ogwa kabugu")) {
+                LoadChild(ob);
+            } else if (HoldItem.equals("Enkoko okugikwata omumwa")) {
+                LoadChild(enkoko);
+            } else if (HoldItem.equals("Okuyisa omukka mu kisero")) {
+                LoadChild(sero);
+            } else if (HoldItem.equals("Okukirira e zira kumwa")) {
+                LoadChild(mwa);
+            } else if (HoldItem.equals("Okufuuyira endiga omulere")) {
+                LoadChild(ndiga);
+            } else if (HoldItem.equals("Okusiika ebinyomo")) {
+                LoadChild(binyomo);
+            } else if (HoldItem.equals("Okufuuka omusu gw'ekanyanya")) {
+                LoadChild(kanyanya);
+            } else if (HoldItem.equals("Okukaabya omuntu akayirigombe")) {
+                LoadChild(aka);
+            } else if (HoldItem.equals("Okukuba obulatti")) {
+                LoadChild(lati);
+            } else if (HoldItem.equals("Ekintu okuba nga n'owemindi asena")) {
+                LoadChild(mindi);
+            } else if (HoldItem.equals("Olubuto okuba mu mannyo")) {
+                LoadChild(mannyo);
+            } else if (HoldItem.equals("Olubuto okuba mu mumugongo")) {
+                LoadChild(njala);
+            } else if (HoldItem.equals("Okukotakoota mu ga lumonde")) {
+                LoadChild(lumonde);
+            } else if (HoldItem.equals("Okugenda ekaganga")) {
+                LoadChild(iok);
+            } else if (HoldItem.equals("Okuteeka nga aga lubigi")) {
+                LoadChild(ob1);
+            } else if (HoldItem.equals("Gaboggola g'ekikere kyenamugongo")) {
+                LoadChild(ob2);
+            } else if (HoldItem.equals("Okwewugulaza ng'Omunyoro alya engabi")) {
+                LoadChild(ob3);
+            } else if (HoldItem.equals("Okweyinula ng' omusimbu agenda ku lutabaalo")) {
+                LoadChild(ob4);
+            } else if (HoldItem.equals("OkukuumaOkukuuma ekintu nga akalira k'omwana")) {
+                LoadChild(ob5);
+            } else if (HoldItem.equals("Emundu emenye")) {
+                LoadChild(ob6);
+            } else if (HoldItem.equals("Okutema kulw'enamuganga")) {
+                LoadChild(ob7);
+            } else if (HoldItem.equals("Okuyita sikaala ebuddo")) {
+                LoadChild(ob8);
+            } else if (HoldItem.equals("Okuzannya n'owebiti")) {
+                LoadChild(ob9);
+            } else if (HoldItem.equals("Okukaaba aga waggoonya")) {
+                LoadChild(ob10);
+            } else if (HoldItem.equals("Okudda e Mbaale mu baganda banno")) {
+                LoadChild(ob11);
+            } else if (HoldItem.equals("Okusanga nga galinnye olunnyo")) {
+                LoadChild(ob12);
+            } else if (HoldItem.equals("Okukuba ey'abageye")) {
+                LoadChild(ob13);
+            } else if (HoldItem.equals("Balyegiira ng'ensimbi egula muwogo")) {
+                LoadChild(ob14);
+            } else if (HoldItem.equals("  Okwetala nga Namutale omunyageko ente")) {
+                LoadChild(ob15);
+            } else
+                LoadChild(defaultName);
+            ParentListItems.put(HoldItem, ChildList);
+        }
+
+        expandableListView = findViewById(R.id.expandListView);
+        final ExpandableListAdapter expandableListAdapter = new ListAdapter(this, ParentList, ParentListItems);
+        expandableListView.setAdapter(expandableListAdapter);
 
 
     }
 
+    private void LoadChild(String[] ParentElementName) {
+        ChildList = new ArrayList<>();
+        Collections.addAll(ChildList, ParentElementName);
+
+    }
 }
