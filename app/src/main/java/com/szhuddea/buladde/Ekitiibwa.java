@@ -12,7 +12,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 //
 
 public class Ekitiibwa extends AppCompatActivity {
- 
+
+
 
 
     private DrawerLayout drawerLayout;
@@ -100,7 +101,6 @@ public class Ekitiibwa extends AppCompatActivity {
         super.onPause();
         MainActivity.closeDrawer(drawerLayout);
     }
-
 
 
 }

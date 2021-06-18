@@ -5,12 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Ekitiibwa"
-    android:id="@+id/drawer_layout">
+    android:id="@+id/drawer_layout"
+    android:background="#313D57"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:gravity="center"
+
 >
         <include
             layout="@layout/main6"/>
@@ -30,7 +34,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp">
 
 
         <TextView
@@ -39,8 +44,8 @@
             android:layout_height="wrap_content"
             android:editable="false"
             android:text="okuva edda nedda elyo lyonna"
-            android:textColor="#040303"
-            android:textSize="20dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/ok"
@@ -48,8 +53,8 @@
             android:layout_height="wrap_content"
             android:editable="false"
             android:text="linno eggwanga buganda"
-            android:textColor="#040303"
-            android:textSize="20dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/te"
@@ -57,8 +62,8 @@
             android:layout_height="wrap_content"
             android:editable="false"
             android:text="lyamanyibwa nnyo eggwanga lyaffe"
-            android:textColor="#040303"
-            android:textSize="20dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/text"
@@ -66,8 +71,8 @@
             android:layout_height="wrap_content"
             android:editable="false"
             android:text="okwetoloola ensi zonna"
-            android:textColor="#040303"
-            android:textSize="20dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="26dp" />
 
 
         <TextView
@@ -76,8 +81,8 @@
             android:layout_height="wrap_content"
             android:background="#00FDFAFA"
             android:editable="false"
-            android:textColor="#040303"
-            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="26dp"
             android:textAlignment="center"/>
 
         <TextView
@@ -85,10 +90,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="Twesiimye nnyo"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -96,10 +101,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="twesiimye nnyo"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -107,10 +112,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="olwa Buganda yaffe"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -118,10 +123,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="ekitiibwa kya Buganda kyava dda"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="60dp"/>
 
         <TextView
@@ -129,10 +134,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="Naffe tukikuumenga"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="70dp"/>
 
         <TextView
@@ -140,8 +145,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
-            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="26dp"
             android:textAlignment="center"/>
 
 
@@ -150,9 +155,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Abazira ennyo abatussoka"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
 
         <TextView
@@ -160,9 +165,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Balwana nnyo muntalo"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
 
         <TextView
@@ -170,9 +175,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Nebalyagala nnyo eggwanga lyaffe"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
 
         <TextView
@@ -180,16 +185,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Naffe, tulyagalenga"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/teab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textSize="2dp" />
 
         <TextView
@@ -197,10 +202,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="Twesiimye nnyo"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -208,10 +213,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="twesiimye nnyo"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -219,10 +224,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="olwa Buganda yaffe"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -230,10 +235,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="ekitiibwa kya Buganda kyava dda"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="60dp"/>
 
         <TextView
@@ -241,10 +246,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="Naffe tukikuumenga"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="70dp"/>
         <TextView
             android:layout_width="match_parent"
@@ -255,43 +260,43 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Ffe abaana ba leero katulwane"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/te30xexpoView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Okukuza obuganda"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/te30xexpoVie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="nga tujjikira nnyo bajjajja baffe"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/te30xexpoVi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Abafirira ensi yaffe"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/txexpoVi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             />
 
 
@@ -300,10 +305,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="Twesiimye nnyo"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -311,10 +316,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="twesiimye nnyo"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -322,10 +327,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="olwa Buganda yaffe"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -333,10 +338,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="ekitiibwa kya Buganda kyava dda"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="60dp"/>
 
         <TextView
@@ -344,62 +349,62 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="Naffe tukikuumenga"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="70dp"/>
         <TextView
             android:id="@+id/tVi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
-            android:textSize="20dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/te30x"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Nze nayimba ntya nesitenda"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/te3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Ssabasajja kabaka"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/te3Vi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Asanira afuge obuganda bwona"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/te300"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Naffe nga tumwesiga"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/te789"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
-            android:textSize="20dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="26dp" />
 
 
         <TextView
@@ -407,10 +412,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="Twesiimye nnyo"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -418,10 +423,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="twesiimye nnyo"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -429,10 +434,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="olwa Buganda yaffe"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -440,10 +445,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="ekitiibwa kya Buganda kyava dda"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="60dp"/>
 
         <TextView
@@ -451,10 +456,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="Naffe tukikuumenga"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="70dp"/>
 
         <TextView
@@ -462,7 +467,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:textSize="10dp"
             android:textAlignment="center"/>
@@ -472,53 +477,53 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Katonda omulungi ow'ekisa"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
         <TextView
             android:id="@+id/te30011"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Otubeere mukama"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/te30"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Otubunduguleko emikisa gyo era"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/te123300"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:text="Baffe omukumenga"
-            android:textSize="20dp" />
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/te3bemba00"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
-            android:textSize="20dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="26dp" />
 
         <TextView
             android:id="@+id/textex0poView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="Twesiimye nnyo"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -526,10 +531,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="twesiimye nnyo"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -537,10 +542,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="olwa Buganda yaffe"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="80dp"/>
 
         <TextView
@@ -548,10 +553,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="ekitiibwa kya Buganda kyava dda"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="60dp"/>
 
         <TextView
@@ -559,10 +564,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:textColor="#040303"
+            android:textColor="#FFFFFF"
             android:textStyle="italic"
             android:text="Naffe tukikuumenga"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:paddingLeft="70dp"/>
 
 

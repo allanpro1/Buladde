@@ -3,16 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#010004">
+    android:background="#313D57">
 
 
     <ImageView
-        android:layout_width="261dp"
-        android:layout_height="57dp"
+        android:layout_width="271dp"
+        android:layout_height="67dp"
         android:layout_margin="16dp"
         android:layout_marginTop="-0dp"
         android:onClick="ClickLogo"
-        android:src="@drawable/rest" />
+        android:src="@drawable/rest"
+        android:layout_gravity="center"/>
 
     <TextView
         android:layout_width="300dp"
@@ -20,8 +21,9 @@
         android:text="Okwaffe"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
 
     <View
         android:layout_width="match_parent"
@@ -33,6 +35,19 @@
 
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
 
 
@@ -41,7 +56,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_horizontal"
-        android:onClick="ClickDashboard">
+        android:onClick="ClickDashboard"
+        android:background="@drawable/home_round"
+        >
 
         <TextView
             android:layout_width="0dp"
@@ -50,22 +67,27 @@
             android:text="Ekika kyo"
             android:textColor="#FFFFFF"
             android:padding="12dp"
-            android:layout_marginStart="16dp"/>
+            android:layout_marginStart="16dp"
+         />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-           android:layout_marginEnd="48dp"
+           android:layout_marginEnd="20dp"
+
             android:src="@drawable/ic_ekika"
-            />
+
+                        />
     </LinearLayout>
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickAbout">
+        android:onClick="ClickAbout"
+        android:background="@drawable/home_round">
 
         <TextView
             android:layout_width="0dp"
@@ -79,7 +101,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
+             android:layout_marginEnd="20dp"
             android:src="@drawable/ic_engero"/>
     </LinearLayout>
 
@@ -89,7 +111,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickEbisoko">
+        android:onClick="ClickEbisoko"
+        android:background="@drawable/home_round">
 
         <TextView
             android:layout_width="0dp"
@@ -103,8 +126,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
-            android:src="@drawable/bisoko"/>
+             android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_baseline_nature_24"/>
     </LinearLayout>
 
 
@@ -114,7 +137,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickEnnaku">
+        android:onClick="ClickEnnaku"
+        android:background="@drawable/home_round">
 
         <TextView
             android:layout_width="0dp"
@@ -128,8 +152,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
-            android:src="@drawable/ennaku"/>
+             android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_baseline_calendar_today_24"/>
     </LinearLayout>
 
 
@@ -139,7 +163,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickAmasaza">
+        android:onClick="ClickAmasaza"
+        android:background="@drawable/home_round">
 
         <TextView
             android:layout_width="0dp"
@@ -153,7 +178,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
+             android:layout_marginEnd="20dp"
             android:src="@drawable/masaza"/>
     </LinearLayout>
 
@@ -164,7 +189,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickEmyezi">
+        android:onClick="ClickEmyezi"
+        android:background="@drawable/home_round">
 
         <TextView
             android:layout_width="0dp"
@@ -178,8 +204,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
-            android:src="@drawable/ano"/>
+             android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_baseline_nights_stay_24"/>
     </LinearLayout>
 
 
@@ -188,7 +214,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickEkitiibwa">
+        android:onClick="ClickEkitiibwa"
+        android:background="@drawable/home_round">
 
         <TextView
             android:layout_width="0dp"
@@ -202,7 +229,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
+             android:layout_marginEnd="20dp"
             android:src="@drawable/b"/>
     </LinearLayout>
 
@@ -211,7 +238,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickZ">
+        android:onClick="ClickZ"
+        android:background="@drawable/home_round">
 
         <TextView
             android:layout_width="0dp"
@@ -225,7 +253,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
+             android:layout_marginEnd="20dp"
             android:src="@drawable/dip"/>
     </LinearLayout>
 
@@ -240,7 +268,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickLogout">
+        android:onClick="ClickLogout"
+        android:background="@drawable/home_round">
 
         <TextView
             android:layout_width="0dp"
@@ -254,13 +283,14 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
-            android:src="@drawable/ba"/>
+             android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_baseline_chevron_left_24"/>
     </LinearLayout>
 
 
 
-
-
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

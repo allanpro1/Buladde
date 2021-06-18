@@ -23,9 +23,9 @@
         android:textAlignment="center"
         android:textColor="#FCFCFD"/>
 
-    I<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/more"/>
+<!--    I<ImageView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:src="@drawable/more"/>-->
 
 </LinearLayout>
