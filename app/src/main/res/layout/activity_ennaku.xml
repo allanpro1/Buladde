@@ -6,17 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".Emyezi"
     android:id="@+id/drawer_layout"
-    android:background="#03A9F4">
+    android:background="#30194A"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+       >
 
         <include
             layout="@layout/main3"/>
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="9dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:editable="false"
@@ -24,19 +44,25 @@
             android:text="Wangu"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            />
 
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:background="#473163"
             android:text="Ssande"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textStyle="italic"
+            android:textStyle="bold"
             android:gravity="center"
-            android:textSize="15sp" />
+            android:textSize="27dp"
+            android:fontFamily="cursive"
+
+            />
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
@@ -45,6 +71,7 @@
             android:background="#FFFFFF"/>
 
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:editable="false"
@@ -52,18 +79,23 @@
             android:text="Kazooba"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            />
 
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#473163"
             android:text="Mmande"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textStyle="italic"
+            android:textStyle="bold"
             android:gravity="center"
-            android:textSize="15sp" />
+            android:textSize="27dp"
+            android:fontFamily="cursive"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
@@ -71,6 +103,7 @@
             android:layout_marginBottom="5dp"
             android:background="#FFFFFF"/>
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:editable="false"
@@ -78,19 +111,23 @@
             android:text="Walumbe"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            />
 
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:background="#473163"
             android:text="Lwakubiri"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textStyle="italic"
+            android:textStyle="bold"
             android:gravity="center"
-            android:textSize="15sp" />
+            android:textSize="27dp"
+            android:fontFamily="cursive"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
@@ -98,6 +135,7 @@
             android:layout_marginBottom="5dp"
             android:background="#FFFFFF"/>
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:editable="false"
@@ -105,19 +143,23 @@
             android:text="Mukasa"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            />
 
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:background="#473163"
             android:text="Lwakusatu"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textStyle="italic"
+            android:textStyle="bold"
             android:gravity="center"
-            android:textSize="15sp" />
+            android:textSize="27dp"
+            android:fontFamily="cursive"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
@@ -125,6 +167,7 @@
             android:layout_marginBottom="5dp"
             android:background="#FFFFFF"/>
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:editable="false"
@@ -132,19 +175,23 @@
             android:text="Kiwanuka"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            />
 
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:background="#473163"
             android:text="Lwakuna"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textStyle="italic"
+            android:textStyle="bold"
             android:gravity="center"
-            android:textSize="15sp" />
+            android:textSize="27dp"
+            android:fontFamily="cursive"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
@@ -153,6 +200,7 @@
             android:background="#FFFFFF"/>
 
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:editable="false"
@@ -160,19 +208,23 @@
             android:text="Nagawonye"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            />
 
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:background="#473163"
             android:text="Lwakutaano"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textStyle="italic"
+            android:textStyle="bold"
             android:gravity="center"
-            android:textSize="15sp" />
+            android:textSize="27dp"
+            android:fontFamily="cursive"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
@@ -183,6 +235,7 @@
 
 
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:editable="false"
@@ -190,19 +243,23 @@
             android:text="Wamunyi"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            />
 
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:background="#473163"
             android:text="Lwamukaaga"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
-            android:textStyle="italic"
+            android:textStyle="bold"
             android:gravity="center"
-            android:textSize="15sp" />
+            android:textSize="27dp"
+            android:fontFamily="cursive"/>
 <!--        <View-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="3dp"-->
@@ -216,8 +273,13 @@
 <!--            android:layout_marginBottom="5dp"-->
 <!--            android:background="#FFFFFF"/>-->
 
-    </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
 
+        </ScrollView>
+
+
+    </LinearLayout>
     <RelativeLayout
         android:layout_width="300dp"
         android:layout_height="match_parent"
@@ -227,4 +289,6 @@
         <include
             layout="@layout/main_nav_drawer"/>
     </RelativeLayout>
+
+
 </androidx.drawerlayout.widget.DrawerLayout>
